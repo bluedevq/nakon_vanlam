@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    position: relative;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin-bottom: 60px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.sp {
+    display: revert;
+}
+
+.pc {
+    display: none;
+}
+
+.footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
+}
+
+.password-hover {
+    cursor: pointer;
+}
+
+.loadingoverlay {
+    opacity: 0.4 !important;
+}
+
+.hide {
+    display: none;
+}
+
+@media (min-width: 767px) {
+    .sp {
+        display: none;
+    }
+
+    .pc {
+        display: revert;
+    }
+}
