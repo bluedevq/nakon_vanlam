@@ -1123,6 +1123,17 @@ p:last-child {
 	margin-top: 25px;
 }
 
+.home-slider-area .carousel-cell {
+    width: 800px;
+    display: flex;
+}
+
+.home-slider-area .carousel-cell img {
+    height: 500px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
 .valign {
 	display: -webkit-box;
 	display: -ms-flexbox;

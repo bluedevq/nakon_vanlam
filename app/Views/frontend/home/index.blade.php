@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&amp;display=swap"
           rel="stylesheet">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="{{ url('img/logo.jpg') }}">
     <!-- Bootstrap Min CSS -->
     <link rel="stylesheet" href="{{ url('css/lib/bootstrap.min.css') }}">
     <!-- Animate Min CSS -->
@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="{{ url('css/lib/fontawesome.min.css') }}">
     <link rel="stylesheet" href="{{ url('css/lib/brands.min.css') }}">
     <link rel="stylesheet" href="{{ url('css/lib/solid.min.css') }}">
+    <!-- flickity CSS -->
+    <link rel="stylesheet" href="{{ url('css/lib/flickity.css') }}">
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="{{ url('css/frontend/assets/style.css') }}">
     <!-- Responsive CSS -->
@@ -67,6 +69,23 @@
 <!-- Start Home Slider Area -->
 <div class="home-slider-area">
     <div class="home-slider" tabindex="0">
+        <div class="main-carousel">
+            <div class="carousel-cell">
+                <img src="{{ url('/img/products/slide_doors/1.jpg') }}" alt="image">
+            </div>
+            <div class="carousel-cell">
+                <img src="{{ url('/img/products/slide_doors/2.jpg') }}" alt="image">
+            </div>
+            <div class="carousel-cell">
+                <img src="{{ url('/img/products/slide_doors/3.jpg') }}" alt="image">
+            </div>
+            <div class="carousel-cell">
+                <img src="{{ url('/img/products/slide_doors/4.jpg') }}" alt="image">
+            </div>
+            <div class="carousel-cell">
+                <img src="{{ url('/img/products/slide_doors/5.jpg') }}" alt="image">
+            </div>
+        </div>
     </div>
 </div>
 <!-- End Home Slider Area -->
@@ -533,7 +552,21 @@
 <script src="{{ url('js/lib/isotope.pkgd.min.js') }}"></script>
 <!-- Scroll To Fixed JS -->
 <script src="{{ url('js/lib/jquery-scrolltofixed.js') }}"></script>
+<!-- flickity JS -->
+<script src="{{ url('js/lib/flickity.pkgd.min.js') }}"></script>
 <!-- Main JS -->
 <script src="{{ url('js/frontend/assets/main.js') }}"></script>
+<script type="application/javascript">
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'center',
+        autoPlay: 3000,
+        pauseAutoPlayOnHover: true,
+        lazyLoad: true,
+        freeScroll: true,
+        contain: true,
+        pageDots: false,
+    });
+</script>
 </body>
 </html>
