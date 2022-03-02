@@ -22,4 +22,8 @@ Route::middleware(['auth.backend'])->group(function () {
         'as' => 'dashboard.index',
         'uses' => 'HomeController@index'
     ]);
+    // product
+    Route::resource('product', 'ProductController')->names('product');
+    // category
+    Route::resource('category', 'CategoryController')->names('category');
 });
