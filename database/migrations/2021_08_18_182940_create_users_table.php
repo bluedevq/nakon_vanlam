@@ -17,18 +17,9 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('email', 256);
             $table->string('password', 64);
-            $table->string('name');
-            $table->string('phone', 14)->nullable();
-            $table->smallInteger('sex')->nullable();
-            $table->text('address')->nullable();
-            $table->dateTime('expired_date');
-            $table->text('forgot_password_token');
-            $table->dateTime('forgot_password_expired');
-            $table->text('verify_token');
-            $table->dateTime('verify_expired');
-            $table->smallInteger('status');
-            $table->timestamps();
+            $table->string('name')->nullable();
             $table->softDeletes();
+            $table->timestamps();
         });
     }
 

@@ -60,6 +60,25 @@ input[type=number] {
     display: none;
 }
 
+.login-card-inner.container {
+    width: 370px;
+    max-width: 100%;
+}
+
+.container {
+    padding-right: 25px;
+    padding-left: 25px;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.login-card-inner .login-card-body .form-block .form-inner {
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+
 @media (min-width: 767px) {
     .sp {
         display: none;
