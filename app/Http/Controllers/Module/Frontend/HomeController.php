@@ -5,10 +5,10 @@ namespace App\Http\Controllers\Module\Frontend;
 use App\Model\Entities\User;
 
 /**
- * Class TestController
+ * Class HomeController
  * @package App\Http\Controllers\Module\Frontend
  */
-class TestController extends FrontendController
+class HomeController extends FrontendController
 {
     public function __construct()
     {

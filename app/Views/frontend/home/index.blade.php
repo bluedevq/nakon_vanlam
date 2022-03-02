@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -33,7 +33,7 @@
         <div class="container">
             <div class="inspire-responsive-menu">
                 <div class="logo">
-                    <a href="index.html"> <img src="{{ url('/img/logo-black.png') }}" alt="logo"> </a>
+                    <a href="{{ url('/') }}"> <img src="{{ url('/img/logo.jpg') }}" alt="logo" width="137" height="46"> </a>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
     <div class="inspire-nav inspire-fixed-nav" style="z-index: 1000;">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="{{ url('/') }}"> <img src="{{ url('/img/logo-black.png') }}" alt="logo"> </a>
+                <a class="navbar-brand" href="{{ url('/') }}"> <img src="{{ url('/img/logo.jpg') }}" alt="logo" width="137" height="46"> </a>
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent" style="display: block;">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="{{ url('about') }}" class="nav-link">Thông tin về chúng tôi</a></li>
@@ -419,7 +419,7 @@
             <div class="col-lg-4 col-md-6 footer-box-item">
                 <div class="footer-about footer-list">
                     <a class="footer-logo" href="#">
-                        <img src="assets/img/logo.png" class="white-logo" alt="logo">
+                        <img src="{{ url('/img/logo.jpg') }}" class="white-logo" alt="logo" width="137" height="46">
                     </a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud consectetur</p>
@@ -483,8 +483,12 @@
 <script src="{{ url('js/lib/popper.min.js') }}"></script>
 <!-- Bootstrap Min JS -->
 <script src="{{ url('js/lib/bootstrap.min.js') }}"></script>
+<!-- Magnific Popup JS -->
+<script src="{{ url('js/lib/jquery.magnific-popup.min.js') }}"></script>
+<!-- Isotope JS -->
+<script src="{{ url('js/lib/isotope.pkgd.min.js') }}"></script>
 <!-- Scroll To Fixed JS -->
-<script src="{{ url('js/frontend/assets/jquery-scrolltofixed.js') }}"></script>
+<script src="{{ url('js/lib/jquery-scrolltofixed.js') }}"></script>
 <!-- Main JS -->
 <script src="{{ url('js/frontend/assets/main.js') }}"></script>
 </body>
