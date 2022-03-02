@@ -3,9 +3,13 @@
 @include('layouts.backend.structures.head')
 <body class="{{ getBodyClass() }}">
 @include('layouts.backend.structures.navigation')
-<main class="container">
-    @yield('content')
-</main>
+<div class="main flex flex-column flex-root">
+    <div class="page flex flex-row flex-column-fluid">
+        <div class="wrapper flex flex-column flex-row-fluid">
+            @yield('content')
+        </div>
+    </div>
+</div>
 @include('layouts.backend.structures.footer')
 @include('layouts.backend.elements.modal')
 @stack('scripts')

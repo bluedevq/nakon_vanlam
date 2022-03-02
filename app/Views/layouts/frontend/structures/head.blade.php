@@ -1,15 +1,18 @@
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>{{ $title ? $title : '' }}</title>
-    <meta name="description" content="">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ public_url('favicon.png') }}">
+    <meta name="description" content="CÔNG TY TNHH THƯƠNG MẠI XÂY DỰNG - SẢN XUẤT NHÔM KÍNH BẢO KHÁNH">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url('img/logo.jpg') }}">
     <?php $cssFiles = [
         'lib/bootstrap.min',
         'lib/bootstrap-theme.min',
         'lib/fontawesome.min',
-        'lib/solid',
+        'lib/solid.min',
     ];
     $jsFiles = [
         'lib/jquery.min',
