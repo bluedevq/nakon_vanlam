@@ -70,215 +70,14 @@
     </div>
 </div>
 <!-- End Home Slider Area -->
-<!-- Start Call Button Section -->
-<section class="consultation-area section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <div class="consultation-content text-center">
-                    <h2>We’re here to help and answer any question you might have.</h2>
-                    <p>Free Consultation About Our IT Solutions For Your Business</p>
-                    <a href="tel:080707555321" class="btn btn-primary"> Get Free Consultation Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Call Button Section -->
-<!-- Start Services Section -->
-<section class="services-area-2 section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services-box">
-                    <div class="services-icon">
-                        <i class="devops icon"></i>
-                    </div>
-                    <h3>Managed Services</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore
-                        magna aliqua</p>
-                    <div class="services-btn">
-                        <a href="single-services.html" class="services-btn-one">Read More </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services-box">
-                    <div class="services-icon">
-                        <i class="machineLearning icon"></i>
-                    </div>
-                    <h3>Cyber Security</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore
-                        magna aliqua</p>
-                    <div class="services-btn">
-                        <a href="single-services.html" class="services-btn-one">Read More </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services-box">
-                    <div class="services-icon">
-                        <i class="microservice icon"></i>
-                    </div>
-                    <h3>Business Improvement</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore
-                        magna aliqua</p>
-                    <div class="services-btn">
-                        <a href="single-services.html" class="services-btn-one">Read More </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services-box">
-                    <div class="services-icon">
-                        <i class="cloudSecurity icon"></i>
-                    </div>
-                    <h3>Professional Services</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore
-                        magna aliqua</p>
-                    <div class="services-btn">
-                        <a href="single-services.html" class="services-btn-one">Read More </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services-box">
-                    <div class="services-icon">
-                        <i class="iotSolutions icon"></i>
-                    </div>
-                    <h3>Cloud Services</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore
-                        magna aliqua</p>
-                    <div class="services-btn">
-                        <a href="single-services.html" class="services-btn-one">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services-box">
-                    <div class="services-icon">
-                        <i class="migrationStrategies icon"></i>
-                    </div>
-                    <h3>Data Backup &amp; Recovery</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore
-                        magna aliqua</p>
-                    <div class="services-btn">
-                        <a href="single-services.html" class="services-btn-one">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12 col-md-12">
-                <div class="services-more-btn-box text-center">
-                    <a class="btn-primary btn-mr-right-20" href="#0">Get Free Quote</a>
-                    <a class="btn-primary" href="#0">More Services</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Services Section -->
-<!-- Start Why Choose Us Section -->
-<section class="whychoose-area section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="section-title">
-                    <h6>Inspire So Different?</h6>
-                    <h2>Why Choose Us</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="whychoose-single-item">
-                    <div class="whychoose-icon-box">
-                        <span class="whychoose-icon-number">1</span>
-                    </div>
-                    <div class="whychoose-info">
-                        <h3>Highly Trained Technical Staff</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            dolore magna aliqua.</p>
-                    </div>
-                    <div class="whychoose-number-bg"><span>1</span></div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="whychoose-single-item">
-                    <div class="whychoose-icon-box">
-                        <span class="whychoose-icon-number">2</span>
-                    </div>
-                    <div class="whychoose-info">
-                        <h3>Increase Your Performance</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            dolore magna aliqua.</p>
-                    </div>
-                    <div class="whychoose-number-bg"><span>2</span></div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="whychoose-single-item">
-                    <div class="whychoose-icon-box">
-                        <span class="whychoose-icon-number">3</span>
-                    </div>
-                    <div class="whychoose-info">
-                        <h3>Reduce Operational Downtime</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            dolore magna aliqua.</p>
-                    </div>
-                    <div class="whychoose-number-bg"><span>3</span></div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="whychoose-single-item">
-                    <div class="whychoose-icon-box">
-                        <span class="whychoose-icon-number">4</span>
-                    </div>
-                    <div class="whychoose-info">
-                        <h3>Cross-Industry Expertise</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            dolore magna aliqua.</p>
-                    </div>
-                    <div class="whychoose-number-bg"><span>4</span></div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="whychoose-single-item">
-                    <div class="whychoose-icon-box">
-                        <span class="whychoose-icon-number">5</span>
-                    </div>
-                    <div class="whychoose-info">
-                        <h3>Dedicated IT Support</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            dolore magna aliqua.</p>
-                    </div>
-                    <div class="whychoose-number-bg"><span>5</span></div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="whychoose-single-item">
-                    <div class="whychoose-icon-box">
-                        <span class="whychoose-icon-number">6</span>
-                    </div>
-                    <div class="whychoose-info">
-                        <h3>Affordable Rates</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            dolore magna aliqua</p>
-                    </div>
-                    <div class="whychoose-number-bg"><span>6</span></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Why Choose Us Section -->
-<!-- Start Project Section -->
+<!-- Start Slide Doors Section -->
 <section class="project-section bg-grey section-padding">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
                 <div class="section-title">
-                    <h6>Featured Works</h6>
-                    <h2>Latest Case Studies</h2>
+                    <!--<h6>Featured Works</h6> -->
+                    <h2>CÁC LOẠI CỬA CUỐN</h2>
                 </div>
             </div>
         </div>
@@ -286,14 +85,14 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/projects/projects-1.jpg') }}" alt="image">
+                        <img src="{{ url('/img/products/slide_doors/1.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
-                                    <h3>App Customization</h3>
+                                    <h3>Cửa cuốn</h3>
                                 </div>
                                 <div class="project-link-flip-back">
-                                    <h3>View Details</h3>
+                                    <h3>Xem thêm</h3>
                                 </div>
                             </div>
                         </div>
@@ -303,14 +102,14 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/projects/projects-2.jpg') }}" alt="image">
+                        <img src="{{ url('/img/products/slide_doors/2.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
-                                    <h3>Data Management</h3>
+                                    <h3>Cửa cuốn</h3>
                                 </div>
                                 <div class="project-link-flip-back">
-                                    <h3>View Details</h3>
+                                    <h3>Xem thêm</h3>
                                 </div>
                             </div>
                         </div>
@@ -320,14 +119,14 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/projects/projects-3.jpg') }}" alt="image">
+                        <img src="{{ url('/img/products/slide_doors/3.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
-                                    <h3>Technology Solutions</h3>
+                                    <h3>Cửa cuốn</h3>
                                 </div>
                                 <div class="project-link-flip-back">
-                                    <h3>View Details</h3>
+                                    <h3>Xem thêm</h3>
                                 </div>
                             </div>
                         </div>
@@ -337,14 +136,14 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/projects/projects-4.jpg') }}" alt="image">
+                        <img src="{{ url('/img/products/slide_doors/4.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
-                                    <h3>Web Development</h3>
+                                    <h3>Cửa cuốn</h3>
                                 </div>
                                 <div class="project-link-flip-back">
-                                    <h3>View Details</h3>
+                                    <h3>Xem thêm</h3>
                                 </div>
                             </div>
                         </div>
@@ -354,14 +153,14 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/projects/projects-5.jpg') }}" alt="image">
+                        <img src="{{ url('/img/products/slide_doors/5.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
-                                    <h3>Digital Marketing</h3>
+                                    <h3>Cửa cuốn</h3>
                                 </div>
                                 <div class="project-link-flip-back">
-                                    <h3>View Details</h3>
+                                    <h3>Xem thêm</h3>
                                 </div>
                             </div>
                         </div>
@@ -371,30 +170,266 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/projects/projects-6.jpg') }}" alt="image">
+                        <img src="{{ url('/img/products/slide_doors/6.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
-                                    <h3>Trouble Shooting</h3>
+                                    <h3>Cửa cuốn</h3>
                                 </div>
                                 <div class="project-link-flip-back">
-                                    <h3>View Details</h3>
+                                    <h3>Xem thêm</h3>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-lg-12 col-md-12">
+            <!--<div class="col-lg-12 col-md-12">
                 <div class="project-more-btn-box text-center">
                     <a class="btn-primary btn-mr-right-20" href="#0">Get Free Quote</a>
                     <a class="btn-primary" href="#0">View All Projects</a>
+                </div>
+            </div>-->
+        </div>
+    </div>
+</section>
+<!-- End Slide Doors Section -->
+<!-- Start Xingfa Doors Section -->
+<section class="project-section bg-grey section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="section-title">
+                    <!--<h6>Featured Works</h6> -->
+                    <h2>CÁC LOẠI CỬA NHÔM XINGFA</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="project-item-box">
+                    <a class="single-project-link" href="single-project.html">
+                        <img src="{{ url('/img/products/xingfa_doors/1.jpg') }}" alt="image">
+                        <div class="project-link-title-box">
+                            <div class="project-link-title-inside">
+                                <div class="project-link-flip-front">
+                                    <h3>Cửa nhôm Xingfa</h3>
+                                </div>
+                                <div class="project-link-flip-back">
+                                    <h3>Xem thêm</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="project-item-box">
+                    <a class="single-project-link" href="single-project.html">
+                        <img src="{{ url('/img/products/xingfa_doors/2.jpg') }}" alt="image">
+                        <div class="project-link-title-box">
+                            <div class="project-link-title-inside">
+                                <div class="project-link-flip-front">
+                                    <h3>Cửa nhôm Xingfa</h3>
+                                </div>
+                                <div class="project-link-flip-back">
+                                    <h3>Xem thêm</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="project-item-box">
+                    <a class="single-project-link" href="single-project.html">
+                        <img src="{{ url('/img/products/xingfa_doors/3.jpg') }}" alt="image">
+                        <div class="project-link-title-box">
+                            <div class="project-link-title-inside">
+                                <div class="project-link-flip-front">
+                                    <h3>Cửa nhôm Xingfa</h3>
+                                </div>
+                                <div class="project-link-flip-back">
+                                    <h3>Xem thêm</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="project-item-box">
+                    <a class="single-project-link" href="single-project.html">
+                        <img src="{{ url('/img/products/xingfa_doors/4.jpg') }}" alt="image">
+                        <div class="project-link-title-box">
+                            <div class="project-link-title-inside">
+                                <div class="project-link-flip-front">
+                                    <h3>Cửa nhôm Xingfa</h3>
+                                </div>
+                                <div class="project-link-flip-back">
+                                    <h3>Xem thêm</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="project-item-box">
+                    <a class="single-project-link" href="single-project.html">
+                        <img src="{{ url('/img/products/xingfa_doors/5.jpg') }}" alt="image">
+                        <div class="project-link-title-box">
+                            <div class="project-link-title-inside">
+                                <div class="project-link-flip-front">
+                                    <h3>Cửa nhôm Xingfa</h3>
+                                </div>
+                                <div class="project-link-flip-back">
+                                    <h3>Xem thêm</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="project-item-box">
+                    <a class="single-project-link" href="single-project.html">
+                        <img src="{{ url('/img/products/xingfa_doors/6.jpg') }}" alt="image">
+                        <div class="project-link-title-box">
+                            <div class="project-link-title-inside">
+                                <div class="project-link-flip-front">
+                                    <h3>Cửa nhôm Xingfa</h3>
+                                </div>
+                                <div class="project-link-flip-back">
+                                    <h3>Xem thêm</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End Project Section -->
+<!-- End Xingfa Doors Section -->
+<!-- Start Glasses Stairs Section -->
+<section class="project-section bg-grey section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="section-title">
+                    <!--<h6>Featured Works</h6> -->
+                    <h2>CÁC LOẠI LAN CAN CẦU THANG KÍNH</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="project-item-box">
+                    <a class="single-project-link" href="single-project.html">
+                        <img src="{{ url('/img/products/glasses_stairs/1.jpg') }}" alt="image">
+                        <div class="project-link-title-box">
+                            <div class="project-link-title-inside">
+                                <div class="project-link-flip-front">
+                                    <h3>Lan can kính</h3>
+                                </div>
+                                <div class="project-link-flip-back">
+                                    <h3>Xem thêm</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="project-item-box">
+                    <a class="single-project-link" href="single-project.html">
+                        <img src="{{ url('/img/products/glasses_stairs/2.jpg') }}" alt="image">
+                        <div class="project-link-title-box">
+                            <div class="project-link-title-inside">
+                                <div class="project-link-flip-front">
+                                    <h3>Lan can kính</h3>
+                                </div>
+                                <div class="project-link-flip-back">
+                                    <h3>Xem thêm</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="project-item-box">
+                    <a class="single-project-link" href="single-project.html">
+                        <img src="{{ url('/img/products/glasses_stairs/3.jpg') }}" alt="image">
+                        <div class="project-link-title-box">
+                            <div class="project-link-title-inside">
+                                <div class="project-link-flip-front">
+                                    <h3>Lan can kính</h3>
+                                </div>
+                                <div class="project-link-flip-back">
+                                    <h3>Xem thêm</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="project-item-box">
+                    <a class="single-project-link" href="single-project.html">
+                        <img src="{{ url('/img/products/glasses_stairs/4.jpg') }}" alt="image">
+                        <div class="project-link-title-box">
+                            <div class="project-link-title-inside">
+                                <div class="project-link-flip-front">
+                                    <h3>Lan can kính</h3>
+                                </div>
+                                <div class="project-link-flip-back">
+                                    <h3>Xem thêm</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="project-item-box">
+                    <a class="single-project-link" href="single-project.html">
+                        <img src="{{ url('/img/products/glasses_stairs/5.jpg') }}" alt="image">
+                        <div class="project-link-title-box">
+                            <div class="project-link-title-inside">
+                                <div class="project-link-flip-front">
+                                    <h3>Lan can kính</h3>
+                                </div>
+                                <div class="project-link-flip-back">
+                                    <h3>Xem thêm</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="project-item-box">
+                    <a class="single-project-link" href="single-project.html">
+                        <img src="{{ url('/img/products/glasses_stairs/6.jpg') }}" alt="image">
+                        <div class="project-link-title-box">
+                            <div class="project-link-title-inside">
+                                <div class="project-link-flip-front">
+                                    <h3>Lan can kính</h3>
+                                </div>
+                                <div class="project-link-flip-back">
+                                    <h3>Xem thêm</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Glasses Stairs Section -->
 <!-- Start Hire Section -->
 <section class="hire-area pb-100">
     <div class="container">
@@ -421,8 +456,12 @@
                     <a class="footer-logo" href="#">
                         <img src="{{ url('/img/logo.jpg') }}" class="white-logo" alt="logo" width="137" height="46">
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud consectetur</p>
+                    <p>CÔNG TY TNHH THƯƠNG MẠI
+                        <br>
+                        XÂY DỰNG - SẢN XUẤT NHÔM KÍNH BẢO KHÁNH
+                        <br>
+                        Niềm tin cho mọi công trình
+                    </p>
                     <ul class="footer-social-icon">
                         <li><a href="https://www.facebook.com/lam.nguyenvan.7165"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -432,14 +471,19 @@
             </div>
             <div class="col-lg-2 col-md-6 footer-box-item">
                 <div class="footer-list">
-                    <h5 class="title">Dịch vụ</h5>
+                    <h5 class="title">Các loại sản phẩm</h5>
                     <ul class="footer-nav-links">
-                        <li><a href="#">IT Strategy</a></li>
-                        <li><a href="#">Network Services</a></li>
-                        <li><a href="#">Software Audits</a></li>
-                        <li><a href="#">Business Intelligence</a></li>
-                        <li><a href="#">Data Science</a></li>
-                        <li><a href="#">Virtual Workstation</a></li>
+                        <li><a href="#">Cửa cuốn</a></li>
+                        <li><a href="#">Cửa nhôm Xingfa</a></li>
+                        <li><a href="#">Lan can cầu thang kính</a></li>
+                        <li><a href="#">Cửa kính cường lực</a></li>
+                        <li><a href="#">Cabin phòng tắm kính</a></li>
+                        <li><a href="#">Cửa nhôm hệ thủy lực</a></li>
+                        <li><a href="#">Cửa nhôm hệ trượt quay</a></li>
+                        <li><a href="#">Cửa nhôm liền tấm</a></li>
+                        <li><a href="#">Cửa thép vân gỗ</a></li>
+                        <li><a href="#">Kính ốp bếp</a></li>
+                        <li><a href="#">Vách kính mặt dựng</a></li>
                     </ul>
                 </div>
             </div>

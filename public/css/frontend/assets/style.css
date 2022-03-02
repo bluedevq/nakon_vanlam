@@ -2345,10 +2345,13 @@ ul.about-list-box li .about-list-info h3 {
   transform: translateY(15px);
 }
 .project-item-box .single-project-link {
-    display: block;
+    display: flex;
 }
 .single-project-link img {
     border-radius: 5px;
+    height: 250px;
+    object-fit: cover;
+    margin: auto;
 }
 
 .project-link-title-box {
@@ -2362,7 +2365,7 @@ ul.about-list-box li .about-list-info h3 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 80px;
+    height: 50px;
 	overflow: hidden;
     border-radius: 5px;
     -webkit-box-shadow: 0 0 20px -5px rgba(68, 107, 138, 0.3);
@@ -4406,6 +4409,10 @@ blockquote::after, .blockquote::after {
 .footer-logo {
 	margin-bottom: 20px;
 	display: inline-block;
+}
+
+.footer-logo img {
+    margin: auto;
 }
 
 .footer-list h5 {
