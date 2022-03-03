@@ -89,366 +89,47 @@
     </div>
 </div>
 <!-- End Home Slider Area -->
-<!-- Start Slide Doors Section -->
-<section class="project-section bg-grey section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="section-title">
-                    <!--<h6>Featured Works</h6> -->
-                    <h2>CÁC LOẠI CỬA CUỐN</h2>
+<!-- Start List Products Section -->
+@if(!blank($listProduct))
+    @foreach($listProduct as $listProductName => $listItems)
+        @if(blank($listItems))
+            @continue
+        @endif
+        <section class="project-section bg-grey section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="section-title">
+                            <h2>{{ \Illuminate\Support\Str::upper($listProductName) }}</h2>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/slide_doors/1.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Cửa cuốn</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
+                <div class="row">
+                @foreach($listItems as $item)
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="project-item-box">
+                                <a class="single-project-link" href="single-project.html">
+                                    <img src="{{ public_url($item->image_url) }}" alt="image">
+                                    <div class="project-link-title-box">
+                                        <div class="project-link-title-inside">
+                                            <div class="project-link-flip-front">
+                                                <h3>{{ $item->name }}</h3>
+                                            </div>
+                                            <div class="project-link-flip-back">
+                                                <h3>Xem thêm</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                    </a>
+                @endforeach
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/slide_doors/2.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Cửa cuốn</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/slide_doors/3.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Cửa cuốn</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/slide_doors/4.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Cửa cuốn</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/slide_doors/5.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Cửa cuốn</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/slide_doors/6.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Cửa cuốn</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!--<div class="col-lg-12 col-md-12">
-                <div class="project-more-btn-box text-center">
-                    <a class="btn-primary btn-mr-right-20" href="#0">Get Free Quote</a>
-                    <a class="btn-primary" href="#0">View All Projects</a>
-                </div>
-            </div>-->
-        </div>
-    </div>
-</section>
-<!-- End Slide Doors Section -->
-<!-- Start Xingfa Doors Section -->
-<section class="project-section bg-grey section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="section-title">
-                    <!--<h6>Featured Works</h6> -->
-                    <h2>CÁC LOẠI CỬA NHÔM XINGFA</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/xingfa_doors/1.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Cửa nhôm Xingfa</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/xingfa_doors/2.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Cửa nhôm Xingfa</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/xingfa_doors/3.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Cửa nhôm Xingfa</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/xingfa_doors/4.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Cửa nhôm Xingfa</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/xingfa_doors/5.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Cửa nhôm Xingfa</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/xingfa_doors/6.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Cửa nhôm Xingfa</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Xingfa Doors Section -->
-<!-- Start Glasses Stairs Section -->
-<section class="project-section bg-grey section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="section-title">
-                    <!--<h6>Featured Works</h6> -->
-                    <h2>CÁC LOẠI LAN CAN CẦU THANG KÍNH</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/glasses_stairs/1.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Lan can kính</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/glasses_stairs/2.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Lan can kính</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/glasses_stairs/3.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Lan can kính</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/glasses_stairs/4.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Lan can kính</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/glasses_stairs/5.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Lan can kính</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="project-item-box">
-                    <a class="single-project-link" href="single-project.html">
-                        <img src="{{ public_url('/imgs/products/glasses_stairs/6.jpg') }}" alt="image">
-                        <div class="project-link-title-box">
-                            <div class="project-link-title-inside">
-                                <div class="project-link-flip-front">
-                                    <h3>Lan can kính</h3>
-                                </div>
-                                <div class="project-link-flip-back">
-                                    <h3>Xem thêm</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Glasses Stairs Section -->
+        </section>
+    @endforeach
+@endif
+<!-- End List Products Section -->
 <!-- Start Hire Section -->
 <section class="hire-area pb-100">
     <div class="container">

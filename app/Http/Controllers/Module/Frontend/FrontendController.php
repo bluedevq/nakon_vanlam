@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Module\Frontend;
 
 use App\Http\Controllers\Base\BaseController;
+use App\Http\Controllers\Base\Traits\Model;
 
 /**
  * Class FrontendController
@@ -10,6 +11,8 @@ use App\Http\Controllers\Base\BaseController;
  */
 class FrontendController extends BaseController
 {
+    use Model;
+
     protected $_area = 'frontend';
 
     public function __construct()
