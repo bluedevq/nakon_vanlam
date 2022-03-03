@@ -20,7 +20,7 @@ class HomeController extends FrontendController
 
     public function index()
     {
-        $categories = $this->fetchModel(Product::class)->where(function ($q) {
+        $categories = $this->fetchModel(Category::class)->where(function ($q) {
             $q->orWhere('deleted_at', '');
             $q->orWhereNull('deleted_at');
         })->get();
