@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <div class="form-btn-area">
-                        <input type="submit" name="submit" value="Đăng nhập" class="btn btn-success btn-login">
+                        <button type="submit" name="submit" class="btn btn-success">Đăng nhập</button>
                     </div>
                 </div>
             {!! Form::close() !!}

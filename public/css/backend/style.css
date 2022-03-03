@@ -383,15 +383,15 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url("../images/body_bg01.jpg");
+  background-image: url("../../imgs/body_bg01.jpg");
 }
 
 body.body-bg02 {
-  background-image: url("../images/body_bg02.jpg");
+  background-image: url("../../imgs/body_bg02.jpg");
 }
 
 body.body-bg03 {
-  background-image: url("../images/body_bg03.jpg");
+  background-image: url("../../imgs/body_bg03.jpg");
 }
 
 .content {
@@ -847,7 +847,7 @@ body.body-bg03 {
 }
 
 .prev-page-btn .btn .icon-arrow {
-  background: url("../images/icon_back.svg") no-repeat 0 50%;
+  background: url("../../imgs/icon_back.svg") no-repeat 0 50%;
   background-size: 22px 22px;
   display: inline-block;
   padding: 3px 0 3px 30px;
@@ -1699,7 +1699,7 @@ input[type="text"].form-zip {
 
 .form-input--password::before {
   content: "";
-  background: #fff url("../images/common/icon_password01.png") no-repeat 0 0/15px 19px;
+  background: #fff url("../../imgs/common/icon_password01.png") no-repeat 0 0/15px 19px;
   height: 19px;
   left: 16px;
   position: absolute;
@@ -2065,7 +2065,7 @@ input[type="text"].form-zip {
 }
 
 .form-datepicker::after {
-  background: url("../images/icon_calender_white.svg") no-repeat 0 0;
+  background: url("../../imgs/icon_calender_white.svg") no-repeat 0 0;
   content: "";
   height: 15px;
   top: 50%;
@@ -2263,7 +2263,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .modaal-wrapper .modaal-close {
-  background: url("../images/btn_close.svg") no-repeat 0 0;
+  background: url("../../imgs/btn_close.svg") no-repeat 0 0;
   background-size: 60px 60px;
   height: 60px;
   width: 60px;
@@ -2437,7 +2437,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .page-back-link a {
-  background: url("../images/icon_back_dark.svg") no-repeat 0 2px;
+  background: url("../../imgs/icon_back_dark.svg") no-repeat 0 2px;
   display: inline-block;
   padding: 0 0 0 23px;
 }
@@ -2825,7 +2825,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .mailmagazine-complete-modal .source-copy .source-copy-header .btn .btn-icon {
-  background: url("../images/btn_clipboard.svg") no-repeat 0 50%;
+  background: url("../../imgs/btn_clipboard.svg") no-repeat 0 50%;
   background-size: 20px 20px;
   display: inline-block;
   padding: 2px 0 2px 26px;
@@ -2946,12 +2946,12 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .login-card .login-card-body .form-block .form-field .form-login-input.form-login-input--email {
-  background: url("../images/icon_member_gray.svg") no-repeat 21px 50%;
+  background: url("../../imgs/icon_member_gray.svg") no-repeat 21px 50%;
   background-size: 23px 23px;
 }
 
 .login-card .login-card-body .form-block .form-field .form-login-input.form-login-input--password {
-  background: url("../images/icon_password_gray.svg") no-repeat 22px 50%;
+  background: url("../../imgs/icon_password_gray.svg") no-repeat 22px 50%;
   background-size: 22px 25px;
 }
 
@@ -2998,7 +2998,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .login-card .login-card-body .form-block .form-btn-area .btn {
-  background: #00b895 url("../images/btn_arrow01.svg") no-repeat right 10px top 50%;
+  background: #00b895 url("../../imgs/btn_arrow01.svg") no-repeat right 10px top 50%;
   background-size: 32px 32px;
   color: #fff;
   display: block;
