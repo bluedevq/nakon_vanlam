@@ -26,7 +26,7 @@ class HomeController extends FrontendController
         })->get();
         $listProduct = [];
         foreach ($categories as $category) {
-            $listProduct[$category->name][] = $this->fetchModel(Product::class)->where(function ($q) {
+            $listProduct[$category->name] = $this->fetchModel(Product::class)->where(function ($q) {
                 $q->orWhere('deleted_at', '');
                 $q->orWhereNull('deleted_at');
             })->where('category_id', $category->id)->get();
