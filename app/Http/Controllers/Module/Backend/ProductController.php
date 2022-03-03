@@ -4,8 +4,6 @@ namespace App\Http\Controllers\Module\Backend;
 
 use App\Model\Entities\Category;
 use App\Model\Entities\Product;
-use Core\Providers\Facades\Storages\BaseStorage;
-use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
@@ -41,14 +39,7 @@ class ProductController extends BackendController
             $entity = new Product();
             $id = $entity->getNextInsertId();
             $entity->id = $id;
-            $entity->name = $this->getParam('name');
-            $image = request()->file('image_url');
-            $filePath = '/imgs/products/';
-            $fileName = $id . '.' . $image->extension();
-            Storage::disk('public')->putFileAs($filePath, $image, $fileName);
-            $entity->image_url = $filePath . $fileName;
-            $entity->category_id = $this->getParam('category_id');
-            $entity->save();
+            $this->_beforeCommit($entity);
             DB::commit();
             return $this->_to('product.index');
         } catch (\Exception $exception) {
@@ -58,14 +49,58 @@ class ProductController extends BackendController
         return $this->_to('product.create')->withInput($this->getParams())->withErrors(new MessageBag(['Lỗi không lưu được']));
     }
 
+    public function update($id)
+    {
+        DB::beginTransaction();
+        try {
+            $entity = $this->fetchModel(Product::class)->where(function ($q) {
+                $q->orWhere('deleted_at', '');
+                $q->orWhereNull('deleted_at');
+            })->where('id', $id)->first();
+            $this->_beforeCommit($entity);
+            DB::commit();
+            return $this->_to('product.index');
+        } catch (\Exception $exception) {
+            DB::rollBack();
+            Log::error($exception);
+        }
+        return $this->_to('product.edit', ['id' => $id])->withInput($this->getParams())->withErrors(new MessageBag(['Lỗi không lưu được']));
+    }
+
     protected function _prepareForm($id = null)
     {
         $this->setViewData([
+            'entity' => $this->fetchModel(Product::class)->where(function ($q) {
+                $q->orWhere('deleted_at', '');
+                $q->orWhereNull('deleted_at');
+            })->where('id', $id)->first(),
             'categories' => $this->fetchModel(Category::class)->where(function ($q) {
                 $q->orWhere('deleted_at', '');
                 $q->orWhereNull('deleted_at');
             })->get()->pluck('name', 'id')
         ]);
         parent::_prepareForm($id);
+    }
+
+    protected function _beforeCommit($entity)
+    {
+        $entity->name = $this->getParam('name');
+        $filename = $this->_uploadFile($entity->id);
+        blank($filename) ? null : $entity->image_url = $filename;
+        $entity->category_id = $this->getParam('category_id');
+        $entity->price = $this->getParam('price');
+        $entity->save();
+    }
+
+    protected function _uploadFile($id)
+    {
+        $image = request()->file('image_url');
+        if (blank($image)) {
+            return null;
+        }
+        $filePath = '/imgs/products/';
+        $fileName = $id . '.' . $image->extension();
+        Storage::disk('public')->putFileAs($filePath, $image, $fileName);
+        return $filePath . $fileName;
     }
 }

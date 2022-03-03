@@ -19,6 +19,7 @@
                                 <th>Ảnh sản phẩm</th>
                                 <th>Tên sản phẩm</th>
                                 <th>Danh mục</th>
+                                <th>Giá</th>
                                 <th></th>
                                 </thead>
                                 <tbody>
@@ -27,7 +28,8 @@
                                     <tr>
                                         <td><img src="{{ public_url($entity->image_url) }}" alt="{{ $entity->name }}" width="100"/></td>
                                         <td>{{ $entity->name }}</td>
-                                        <td>{{ $entity->name }}</td>
+                                        <td>{{ $entity->category_id }}</td>
+                                        <td>{{ number_format($entity->price) }}</td>
                                         <td>
                                             <div class="flex align-items-center justify-content-end flex-shrink-0">
                                                 <a href="{{ route('product.edit', $entity->id) }}" class="btn btn-icon mr-3">
@@ -42,7 +44,7 @@
                                 @endforeach
                                 @else
                                     <tr>
-                                        <td colspan="4" style="text-align: center">Không có sản phẩm nào</td>
+                                        <td colspan="5" style="text-align: center">Không có sản phẩm nào</td>
                                     </tr>
                                 @endif
                                 </tbody>

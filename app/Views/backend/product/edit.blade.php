@@ -7,7 +7,7 @@
                     <div class="card-header">
                         <div class="page-title flex align-items-center">
                             <div class="mr-auto flex align-items-center">
-                                <h1 class="heading-1">Thêm mới sản phẩm</h1>
+                                <h1 class="heading-1">Sửa sản phẩm</h1>
                             </div>
                         </div>
                     </div>
