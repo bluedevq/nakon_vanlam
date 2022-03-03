@@ -27,7 +27,7 @@ class ProductController extends BackendController
             'entities' => $this->fetchModel(Product::class)->where(function ($q) {
                 $q->orWhere('deleted_at', '');
                 $q->orWhereNull('deleted_at');
-            })->get()
+            })->with('category')->get()
         ]);
         return $this->render();
     }
@@ -73,7 +73,7 @@ class ProductController extends BackendController
             'entity' => $this->fetchModel(Product::class)->where(function ($q) {
                 $q->orWhere('deleted_at', '');
                 $q->orWhereNull('deleted_at');
-            })->where('id', $id)->first(),
+            })->where('id', $id)->firstOrNew(),
             'categories' => $this->fetchModel(Category::class)->where(function ($q) {
                 $q->orWhere('deleted_at', '');
                 $q->orWhereNull('deleted_at');
