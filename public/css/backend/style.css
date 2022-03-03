@@ -1610,7 +1610,7 @@ button {
 
 /* form default */
 input.form-control, input[type="number"].form-control, input[type="email"].form-control, button.form-control, textarea.form-control {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -1856,8 +1856,7 @@ input[type="text"].form-zip {
 .form-select {
   display: block;
   position: relative;
-  width: auto;
-  font-size: 14px;
+  font-size: 16px;
   border: 1px solid #7C7C7C;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;

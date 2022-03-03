@@ -12,6 +12,7 @@
                         </div>
                     </div>
                     <div class="card-body">
+                        <div class="mb-4"><a href="{{ route('product.create') }}" class="btn btn-success"><i class="fas fa-plus"></i>&nbsp;Thêm sản phẩm</a></div>
                         <div class="scroll-area responsive-container-sp">
                             <table class="table align-middle">
                                 <thead>
@@ -24,7 +25,7 @@
                                 @if (!blank($entities))
                                 @foreach($entities as $entity)
                                     <tr>
-                                        <td><img src="{{ url($entity->image_url) }}" alt="{{ $entity->name }}" width="100"/></td>
+                                        <td><img src="{{ public_url($entity->image_url) }}" alt="{{ $entity->name }}" width="100"/></td>
                                         <td>{{ $entity->name }}</td>
                                         <td>{{ $entity->name }}</td>
                                         <td>

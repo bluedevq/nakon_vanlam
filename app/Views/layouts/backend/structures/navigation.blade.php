@@ -1,7 +1,7 @@
 <header role="header" class="header">
     <div class="container flex align-items-center">
         <div class="header-title">
-            <a href="{{ url('/admin') }}"><img src="{{ url('img/logo.jpg') }}" width="100"></a>
+            <a href="{{ public_url('/admin') }}"><img src="{{ public_url('imgs/logo.jpg') }}" width="100"></a>
         </div>
         <div class="header-user-name">
             <ul class="nav nav-pills">

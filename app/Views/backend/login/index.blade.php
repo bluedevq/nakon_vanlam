@@ -1,7 +1,7 @@
 @extends('layouts.backend.auth')
 @section('content')
     <div class="login-card-inner container">
-        <h1><img src="{{ url('img/logo.jpg') }}" width="250"></h1>
+        <h1><img src="{{ public_url('imgs/logo.jpg') }}" width="250"></h1>
         <div class="login-card-body">
             {{ Form::open(['route' => 'backend.auth', 'class' => 'form-signin', 'method' => 'post']) }}
                 <div class="form-block">

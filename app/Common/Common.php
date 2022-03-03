@@ -95,7 +95,7 @@ if (!function_exists('loadFile')) {
             if (!file_exists(public_path($filePath))) {
                 continue;
             }
-            $result .= $type == 'css' ? Html::style(buildVersion(url($filePath))) : Html::script(buildVersion(url($filePath)));
+            $result .= $type == 'css' ? Html::style(buildVersion(public_url($filePath))) : Html::script(buildVersion(public_url($filePath)));
         }
         return $result;
     }

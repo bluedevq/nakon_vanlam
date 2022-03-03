@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>{{ $title ? $title : '' }}</title>
     <meta name="description" content="CÔNG TY TNHH THƯƠNG MẠI XÂY DỰNG - SẢN XUẤT NHÔM KÍNH BẢO KHÁNH">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url('img/logo.jpg') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ public_url('imgs/logo.jpg') }}">
     <?php $cssFiles = [
         'lib/bootstrap.min',
         'lib/bootstrap-theme.min',

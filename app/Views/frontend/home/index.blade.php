@@ -12,21 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&amp;display=swap"
           rel="stylesheet">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ url('img/logo.jpg') }}">
+    <link rel="icon" type="image/png" href="{{ public_url('img/logo.jpg') }}">
     <!-- Bootstrap Min CSS -->
-    <link rel="stylesheet" href="{{ url('css/lib/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ public_url('css/lib/bootstrap.min.css') }}">
     <!-- Animate Min CSS -->
-    <link rel="stylesheet" href="{{ url('css/frontend/assets/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ public_url('css/frontend/assets/animate.min.css') }}">
     <!-- Font Awesome Min CSS -->
-    <link rel="stylesheet" href="{{ url('css/lib/fontawesome.min.css') }}">
-    <link rel="stylesheet" href="{{ url('css/lib/brands.min.css') }}">
-    <link rel="stylesheet" href="{{ url('css/lib/solid.min.css') }}">
+    <link rel="stylesheet" href="{{ public_url('css/lib/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ public_url('css/lib/brands.min.css') }}">
+    <link rel="stylesheet" href="{{ public_url('css/lib/solid.min.css') }}">
     <!-- flickity CSS -->
-    <link rel="stylesheet" href="{{ url('css/lib/flickity.css') }}">
+    <link rel="stylesheet" href="{{ public_url('css/lib/flickity.css') }}">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="{{ url('css/frontend/assets/style.css') }}">
+    <link rel="stylesheet" href="{{ public_url('css/frontend/assets/style.css') }}">
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="{{ url('css/frontend/assets/responsive.css') }}">
+    <link rel="stylesheet" href="{{ public_url('css/frontend/assets/responsive.css') }}">
 </head>
 <body>
 <!-- Start Navbar Area -->
@@ -35,7 +35,7 @@
         <div class="container">
             <div class="inspire-responsive-menu">
                 <div class="logo">
-                    <a href="{{ url('/') }}"> <img src="{{ url('/img/logo.jpg') }}" alt="logo" width="137" height="46"> </a>
+                    <a href="{{ public_url('/') }}"> <img src="{{ public_url('/imgs/logo.jpg') }}" alt="logo" width="137" height="46"> </a>
                 </div>
             </div>
         </div>
@@ -44,10 +44,10 @@
     <div class="inspire-nav inspire-fixed-nav" style="z-index: 1000;">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="{{ url('/') }}"> <img src="{{ url('/img/logo.jpg') }}" alt="logo" width="137" height="46"> </a>
+                <a class="navbar-brand" href="{{ public_url('/') }}"> <img src="{{ public_url('/imgs/logo.jpg') }}" alt="logo" width="137" height="46"> </a>
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent" style="display: block;">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="{{ url('about') }}" class="nav-link">Thông tin về chúng tôi</a></li>
+                        <li class="nav-item"><a href="{{ public_url('about') }}" class="nav-link">Thông tin về chúng tôi</a></li>
                         <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Các dịch vụ <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a href="services.html" class="nav-link">Services 1</a></li>
@@ -57,7 +57,7 @@
                                         Details</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a href="{{ url('contact') }}" class="nav-link">Liên hệ</a></li>
+                        <li class="nav-item"><a href="{{ public_url('contact') }}" class="nav-link">Liên hệ</a></li>
                     </ul>
                 </div>
             </nav>
@@ -71,19 +71,19 @@
     <div class="home-slider" tabindex="0">
         <div class="main-carousel">
             <div class="carousel-cell">
-                <img src="{{ url('/img/products/slide_doors/1.jpg') }}" alt="image">
+                <img src="{{ public_url('/imgs/products/slide_doors/1.jpg') }}" alt="image">
             </div>
             <div class="carousel-cell">
-                <img src="{{ url('/img/products/slide_doors/2.jpg') }}" alt="image">
+                <img src="{{ public_url('/imgs/products/slide_doors/2.jpg') }}" alt="image">
             </div>
             <div class="carousel-cell">
-                <img src="{{ url('/img/products/slide_doors/3.jpg') }}" alt="image">
+                <img src="{{ public_url('/imgs/products/slide_doors/3.jpg') }}" alt="image">
             </div>
             <div class="carousel-cell">
-                <img src="{{ url('/img/products/slide_doors/4.jpg') }}" alt="image">
+                <img src="{{ public_url('/imgs/products/slide_doors/4.jpg') }}" alt="image">
             </div>
             <div class="carousel-cell">
-                <img src="{{ url('/img/products/slide_doors/5.jpg') }}" alt="image">
+                <img src="{{ public_url('/imgs/products/slide_doors/5.jpg') }}" alt="image">
             </div>
         </div>
     </div>
@@ -104,7 +104,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/slide_doors/1.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/slide_doors/1.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -121,7 +121,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/slide_doors/2.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/slide_doors/2.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -138,7 +138,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/slide_doors/3.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/slide_doors/3.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -155,7 +155,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/slide_doors/4.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/slide_doors/4.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -172,7 +172,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/slide_doors/5.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/slide_doors/5.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -189,7 +189,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/slide_doors/6.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/slide_doors/6.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -228,7 +228,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/xingfa_doors/1.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/xingfa_doors/1.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -245,7 +245,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/xingfa_doors/2.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/xingfa_doors/2.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -262,7 +262,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/xingfa_doors/3.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/xingfa_doors/3.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -279,7 +279,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/xingfa_doors/4.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/xingfa_doors/4.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -296,7 +296,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/xingfa_doors/5.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/xingfa_doors/5.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -313,7 +313,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/xingfa_doors/6.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/xingfa_doors/6.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -346,7 +346,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/glasses_stairs/1.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/glasses_stairs/1.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -363,7 +363,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/glasses_stairs/2.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/glasses_stairs/2.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -380,7 +380,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/glasses_stairs/3.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/glasses_stairs/3.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -397,7 +397,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/glasses_stairs/4.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/glasses_stairs/4.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -414,7 +414,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/glasses_stairs/5.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/glasses_stairs/5.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -431,7 +431,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="project-item-box">
                     <a class="single-project-link" href="single-project.html">
-                        <img src="{{ url('/img/products/glasses_stairs/6.jpg') }}" alt="image">
+                        <img src="{{ public_url('/imgs/products/glasses_stairs/6.jpg') }}" alt="image">
                         <div class="project-link-title-box">
                             <div class="project-link-title-inside">
                                 <div class="project-link-flip-front">
@@ -473,7 +473,7 @@
             <div class="col-lg-4 col-md-6 footer-box-item">
                 <div class="footer-about footer-list">
                     <a class="footer-logo" href="#">
-                        <img src="{{ url('/img/logo.jpg') }}" class="white-logo" alt="logo" width="137" height="46">
+                        <img src="{{ public_url('/imgs/logo.jpg') }}" class="white-logo" alt="logo" width="137" height="46">
                     </a>
                     <p>CÔNG TY TNHH THƯƠNG MẠI
                         <br>
@@ -541,21 +541,21 @@
 </div>
 <!-- End Go Top Section -->
 <!-- jQuery Min JS -->
-<script src="{{ url('js/lib/jquery.min.js') }}"></script>
+<script src="{{ public_url('js/lib/jquery.min.js') }}"></script>
 <!-- Popper Min JS -->
-<script src="{{ url('js/lib/popper.min.js') }}"></script>
+<script src="{{ public_url('js/lib/popper.min.js') }}"></script>
 <!-- Bootstrap Min JS -->
-<script src="{{ url('js/lib/bootstrap.min.js') }}"></script>
+<script src="{{ public_url('js/lib/bootstrap.min.js') }}"></script>
 <!-- Magnific Popup JS -->
-<script src="{{ url('js/lib/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ public_url('js/lib/jquery.magnific-popup.min.js') }}"></script>
 <!-- Isotope JS -->
-<script src="{{ url('js/lib/isotope.pkgd.min.js') }}"></script>
+<script src="{{ public_url('js/lib/isotope.pkgd.min.js') }}"></script>
 <!-- Scroll To Fixed JS -->
-<script src="{{ url('js/lib/jquery-scrolltofixed.js') }}"></script>
+<script src="{{ public_url('js/lib/jquery-scrolltofixed.js') }}"></script>
 <!-- flickity JS -->
-<script src="{{ url('js/lib/flickity.pkgd.min.js') }}"></script>
+<script src="{{ public_url('js/lib/flickity.pkgd.min.js') }}"></script>
 <!-- Main JS -->
-<script src="{{ url('js/frontend/assets/main.js') }}"></script>
+<script src="{{ public_url('js/frontend/assets/main.js') }}"></script>
 <script type="application/javascript">
     $('.main-carousel').flickity({
         // options
