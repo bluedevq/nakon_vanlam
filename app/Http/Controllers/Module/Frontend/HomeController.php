@@ -33,7 +33,8 @@ class HomeController extends FrontendController
         }
 
         $this->setViewData([
-            'listProduct' => $listProduct
+            'listProduct' => $listProduct,
+            'categories' => $categories,
         ]);
         return $this->render();
     }

@@ -169,24 +169,18 @@
                     </ul>
                 </div>
             </div>
+            @if(!blank($categories))
             <div class="col-lg-2 col-md-6 footer-box-item">
                 <div class="footer-list">
                     <h5 class="title">Các loại sản phẩm</h5>
                     <ul class="footer-nav-links">
-                        <li><a href="#">Cửa cuốn</a></li>
-                        <li><a href="#">Cửa nhôm Xingfa</a></li>
-                        <li><a href="#">Lan can cầu thang kính</a></li>
-                        <li><a href="#">Cửa kính cường lực</a></li>
-                        <li><a href="#">Cabin phòng tắm kính</a></li>
-                        <li><a href="#">Cửa nhôm hệ thủy lực</a></li>
-                        <li><a href="#">Cửa nhôm hệ trượt quay</a></li>
-                        <li><a href="#">Cửa nhôm liền tấm</a></li>
-                        <li><a href="#">Cửa thép vân gỗ</a></li>
-                        <li><a href="#">Kính ốp bếp</a></li>
-                        <li><a href="#">Vách kính mặt dựng</a></li>
+                        @foreach($categories as $category)
+                        <li><a href="#">{{ $category->name }}</a></li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
+            @endif
             <div class="col-lg-4 col-md-6 footer-box-item">
                 <div class="footer-list">
                     <h5 class="title">Thông tin liên hệ</h5>
