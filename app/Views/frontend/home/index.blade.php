@@ -24,7 +24,7 @@
     <!-- flickity CSS -->
     <link rel="stylesheet" href="{{ public_url('css/lib/flickity.css') }}">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="{{ public_url('css/frontend/assets/style.css') }}">
+    <link rel="stylesheet" href="{{ public_url('css/frontend/assets/style.css?v=' . time()) }}">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="{{ public_url('css/frontend/assets/responsive.css') }}">
 </head>
