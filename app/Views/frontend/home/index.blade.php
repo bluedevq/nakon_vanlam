@@ -66,32 +66,24 @@
     <div></div>
 </div>
 <!-- End Navbar Area -->
-<!-- Start Home Slider Area -->
+@if(!blank($sliders))
 <div class="home-slider-area">
     <div class="home-slider" tabindex="0">
         <div class="main-carousel">
+            @foreach($sliders as $slider)
             <div class="carousel-cell">
-                <img src="{{ public_url('/imgs/products/slide_doors/1.jpg') }}" alt="image">
+                <img src="{{ public_url(\Illuminate\Support\Arr::get($slider, 'image_url')) }}" alt="image">
             </div>
-            <div class="carousel-cell">
-                <img src="{{ public_url('/imgs/products/slide_doors/2.jpg') }}" alt="image">
-            </div>
-            <div class="carousel-cell">
-                <img src="{{ public_url('/imgs/products/slide_doors/3.jpg') }}" alt="image">
-            </div>
-            <div class="carousel-cell">
-                <img src="{{ public_url('/imgs/products/slide_doors/4.jpg') }}" alt="image">
-            </div>
-            <div class="carousel-cell">
-                <img src="{{ public_url('/imgs/products/slide_doors/5.jpg') }}" alt="image">
-            </div>
+            @endforeach
         </div>
     </div>
 </div>
 <!-- End Home Slider Area -->
+@endif
+<!-- Start Home Slider Area -->
 <!-- Start List Products Section -->
-@if(!blank($listProduct))
-    @foreach($listProduct as $listProductName => $listItems)
+@if(!blank($listProducts))
+    @foreach($listProducts as $productCategory => $listItems)
         @if(blank($listItems))
             @continue
         @endif
@@ -100,7 +92,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="section-title">
-                            <h2>{{ \Illuminate\Support\Str::upper($listProductName) }}</h2>
+                            <h2>{{ \Illuminate\Support\Str::upper($productCategory) }}</h2>
                         </div>
                     </div>
                 </div>

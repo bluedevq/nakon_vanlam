@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Module\Frontend;
 
 use App\Model\Entities\Category;
 use App\Model\Entities\Product;
-use App\Model\Entities\User;
 
 /**
  * Class HomeController
@@ -23,19 +22,25 @@ class HomeController extends FrontendController
         $categories = $this->fetchModel(Category::class)->where(function ($q) {
             $q->orWhere('deleted_at', '');
             $q->orWhereNull('deleted_at');
-        })->get();
-        $listProduct = [];
+        })->with('products')->get();
+        $listProducts = $sliders = [];
         foreach ($categories as $category) {
-            $listProduct[$category->name] = $this->fetchModel(Product::class)->where(function ($q) {
-                $q->orWhere('deleted_at', '');
-                $q->orWhereNull('deleted_at');
-            })->where('category_id', $category->id)->get();
+            $products = $category->products;
+            if (blank($products)) {
+                continue;
+            }
+            $listProducts[$category->name] = $products;
+            $sliders = array_merge($sliders, array_map(function ($item) {
+                return $item;
+            }, $products->toArray()));
         }
-
+        shuffle($sliders);
         $this->setViewData([
-            'listProduct' => $listProduct,
+            'listProducts' => $listProducts,
             'categories' => $categories,
+            'sliders' => array_slice($sliders, 0, 6),
         ]);
+
         return $this->render();
     }
 }
