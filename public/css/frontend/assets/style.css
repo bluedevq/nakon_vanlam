@@ -1235,32 +1235,6 @@ p:last-child {
 	bottom: 25px;
 }
 
-/**************************************
- ** - 03.01 - Demo-3 Home Area CSS
- **************************************/
-.home-area {
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-  height: 650px;
-  background-image: url(../../../img/home3-bg.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-/*
-.home-area::after {
-  position: absolute;
-  top: 0;
-  content: "";
-  left: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  opacity: .5;
-  z-index: -1;
-  background: #060620;
-}
-*/
 .main-banner-content {
     max-width: 510px;
 	padding-bottom: 50px;
@@ -1511,7 +1485,7 @@ ul.about-list-box li .about-list-info h3 {
 	position: relative;
 	z-index: 1;
 	color: #fff;
-	background: url(../../../img/banner-bg.jpg);
+	background: url(../../../imgs/banner-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -2092,7 +2066,7 @@ ul.about-list-box li .about-list-info h3 {
 
 .services-4-number-bg span {
     font-size: 5.5rem;
-    color: rgb(0, 0, 0, .03);
+    color: rgba(0, 0, 0, .03);
     font-weight: 800;
     line-height: 1;
     -webkit-transition: all .3s ease;
@@ -2111,7 +2085,7 @@ ul.about-list-box li .about-list-info h3 {
     opacity: .6;
 }
 .single-services-4:hover .services-4-number-bg span {
-    color: rgb(0, 0, 0, .09);
+    color: rgba(0, 0, 0, .09);
 }
 
 /************************************************
@@ -2142,7 +2116,7 @@ ul.about-list-box li .about-list-info h3 {
 
 .services-details-bg-title-area {
     background: #242a2d;
-	box-shadow: 0 10px 32px rgb(0, 0, 0, 0.20);
+	box-shadow: 0 10px 32px rgba(0, 0, 0, 0.20);
 }
 .services-details-bg-title-content h2 {
     color: #fff;
@@ -2177,7 +2151,7 @@ ul.about-list-box li .about-list-info h3 {
     top: 0;
 }
 .whychoose-icon-box .whychoose-icon-number {
-    background: url(../../../img/circle-border.svg) 0 0 no-repeat;
+    background: url(../../../imgs/circle-border.svg) 0 0 no-repeat;
     font-size: 1rem;
     font-weight: 600;
     color: #fff;
@@ -2240,7 +2214,7 @@ ul.about-list-box li .about-list-info h3 {
     top: 0;
 }
 .workprocess-icon-box .workprocess-icon-number {
-    background: url(../../../img/circle-border.svg) 0 0 no-repeat;
+    background: url(../../../imgs/circle-border.svg) 0 0 no-repeat;
     font-size: 1rem;
     font-weight: 600;
     color: #fff;
@@ -2304,7 +2278,7 @@ ul.about-list-box li .about-list-info h3 {
 	left: 0;
 	top: 0;
 	background-color: #217fca;
-	background-image: url(../../../img/counter-bg.jpg);
+	background-image: url(../../../imgs/counter-bg.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -3915,18 +3889,6 @@ blockquote::after, .blockquote::after {
 	background-position: center center !important;
 }
 
-.widget-area .widget_inspire_posts_thumb .item .thumb .fullimage.bg1 {
-	background-image: url(../../../img/blog/blog-1.jpg);
-}
-
-.widget-area .widget_inspire_posts_thumb .item .thumb .fullimage.bg2 {
-	background-image: url(../../../img/blog/blog-2.jpg);
-}
-
-.widget-area .widget_inspire_posts_thumb .item .thumb .fullimage.bg3 {
-	background-image: url(../../../img/blog/blog-3.jpg);
-}
-
 .widget-area .widget_inspire_posts_thumb .item .info {
 	overflow: hidden;
 	margin-top: 5px;
@@ -4191,7 +4153,7 @@ blockquote::after, .blockquote::after {
 	position: relative;
 	z-index: 1;
 	border-radius: 5px;
-	background: url(../../../img/banner-bg.jpg);
+	background: url(../../../imgs/banner-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -4612,7 +4574,7 @@ blockquote::after, .blockquote::after {
  ** - 21.01 - Demo-2 Footer Section CSS
  **********************************************/
 .footer-section-2 {
-	background-image: url(../../../img/footer-shape.svg);
+	background-image: url(../../../imgs/footer-shape.svg);
 	background-position: left center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -4630,7 +4592,7 @@ blockquote::after, .blockquote::after {
 	top: 0;
 	z-index: -1;
 	opacity: 0.8;
-	background-image: url(../../../img/footer-dot.png);
+	background-image: url(../../../imgs/footer-dot.png);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -4866,14 +4828,6 @@ blockquote::after, .blockquote::after {
 /****************************************
  ** - 23 - All Contact Page Section CSS
  ****************************************/
-
-.home-3-contact-area,
-.contact-page-1-section {
-	background-image: url(../../../img/map-image.png);
-    background-position: right center;
-    background-size: auto;
-    background-repeat: no-repeat;
-}
 .contact-form-box {
     margin-top: 35px;
 }
@@ -4891,7 +4845,6 @@ blockquote::after, .blockquote::after {
 .home-3-contact-area form .form-control,
 .contact-page-1-section form .form-control {
 	background-color: transparent;
-	border: none;
 	height: 50px;
 	font-size: 15px;
 	border: 1px solid #cacaca;
@@ -4945,7 +4898,6 @@ blockquote::after, .blockquote::after {
  **************************************/
 .contact-form-2 .form .form-control {
     background-color: #f3f3f3;
-    border: none;
     height: 50px;
     font-size: 15px;
     border: 0px solid #f3f3f3;
@@ -5716,7 +5668,7 @@ blockquote::after, .blockquote::after {
 	position: relative;
 	z-index: 1;
 	height: 100vh;
-	background-image: url(../../../img/banner-bg.jpg);
+	background-image: url(../../../imgs/banner-bg.jpg);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
