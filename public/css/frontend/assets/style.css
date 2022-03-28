@@ -609,10 +609,6 @@ p:last-child {
 	padding-left: 5px;
 }
 
-.inspire-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover::before, .inspire-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus::before, .inspire-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active::before {
-	width: 5px;
-}
-
 .inspire-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
 	left: -245px;
 	top: 0;

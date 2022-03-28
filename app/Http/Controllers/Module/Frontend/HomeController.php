@@ -37,7 +37,6 @@ class HomeController extends FrontendController
         shuffle($sliders);
         $this->setViewData([
             'listProducts' => $listProducts,
-            'categories' => $categories,
             'sliders' => array_slice($sliders, 0, 6),
         ]);
 

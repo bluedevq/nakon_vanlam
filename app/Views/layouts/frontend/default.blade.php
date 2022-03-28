@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 @include('layouts.frontend.structures.head')
 <body class="{{ getBodyClass() }}">
 @include('layouts.frontend.structures.navigation')
-<main class="container">
-    @yield('content')
-</main>
+@yield('content')
 @include('layouts.frontend.structures.footer')
 @include('layouts.frontend.elements.modal')
 @stack('scripts')
