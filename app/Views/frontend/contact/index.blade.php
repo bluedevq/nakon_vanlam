@@ -18,10 +18,12 @@
 </section>
 <!-- End Hire Section -->
 <!-- Map Section Start -->
-<div class="container">
-    <div class="map-area">
-        <div class="map-content">
-            <div class="map-canvas" id="contact-map"></div>
+<div class="contact-map pb-2">
+    <div class="container">
+        <div class="map-area">
+            <div class="map-content">
+                <div class="map-canvas" id="contact-map"></div>
+            </div>
         </div>
     </div>
 </div>
