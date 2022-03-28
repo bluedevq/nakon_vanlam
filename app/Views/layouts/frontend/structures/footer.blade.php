@@ -15,7 +15,6 @@
                     </p>
                     <ul class="footer-social-icon">
                         <li><a href="https://www.facebook.com/lam.nguyenvan.7165"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                     </ul>
                 </div>

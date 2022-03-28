@@ -9,7 +9,7 @@
                     <div class="hire-content position-relative z-index text-center">
                         <h2>BẢO KHÁNH</h2>
                         <h5>Công ty TNHH thương mại xây dựng - sản xuất nhôm kính</h5>
-                        <a href="tel:0912829510" class="btn btn-primary mt-25">0912 829 510</a>
+                        <h5>0912 829 510</h5>
                     </div>
                 </div>
             </div>

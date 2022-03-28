@@ -34,7 +34,7 @@
                 @foreach($listItems as $item)
                     <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="project-item-box">
-                                <a class="single-project-link" href="single-project.html">
+                                <a class="single-project-link" href="{{ route('frontend.product.show', $item->id) }}">
                                     <img src="{{ public_url($item->image_url) }}" alt="image">
                                     <div class="project-link-title-box">
                                         <div class="project-link-title-inside">
@@ -65,7 +65,7 @@
                     <div class="hire-content position-relative z-index text-center">
                         <h2>BẢO KHÁNH</h2>
                         <h5>Công ty TNHH thương mại xây dựng - sản xuất nhôm kính</h5>
-                        <a href="#0" class="btn btn-primary mt-25">Liên hệ ngay với chúng tôi</a>
+                        <a href="tel:0912829510" class="btn btn-primary mt-25">0912 829 510</a>
                     </div>
                 </div>
             </div>

@@ -89,6 +89,7 @@ class ProductController extends BackendController
         blank($filename) ? null : $entity->image_url = $filename;
         $entity->category_id = $this->getParam('category_id');
         $entity->price = $this->getParam('price');
+        $entity->description = $this->getParam('description');
         $entity->save();
     }
 

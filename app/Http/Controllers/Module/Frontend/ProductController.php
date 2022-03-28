@@ -26,7 +26,7 @@ class ProductController extends FrontendController
     public function show($id)
     {
         $this->setViewData([
-            'entity' => app()->make(Product::class)->find($id)->first()
+            'entity' => app()->make(Product::class)->find($id)
         ]);
         return $this->render();
     }

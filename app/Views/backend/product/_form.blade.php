@@ -34,6 +34,20 @@
                 {!! Form::file('image_url', ['class' => 'form-control ' .  ($errors->has('image_url') ? 'border-error' : '')]) !!}
                 @if($errors->has('image_url'))<p class="error">{{ $errors->first('image_url') }}</p>@endif
             </div>
+            @if($entity->image_url)
+                <div class="form-field col-4">
+                    <img src="{{ public_url($entity->image_url) }}" alt="">
+                </div>
+            @endif
+        </div>
+    </div>
+    <div class="row mt-4 col-12">
+        <div class="form-group">
+            <div class="form-field col-8">
+                <label class="input-name">Mô tả sản phẩm</label>
+                {!! Form::textarea('description', $entity->description, ['class' => 'form-control ' .  ($errors->has('description') ? 'border-error' : '')]) !!}
+                @if($errors->has('description'))<p class="error">{{ $errors->first('description') }}</p>@endif
+            </div>
         </div>
     </div>
     <div class="row mt-4 col-12">

@@ -59,6 +59,10 @@ input[type=number] {
     max-width: 100%;
 }
 
+.login-card-inner h1 {
+    text-align: center;
+}
+
 .container {
     padding-right: 25px;
     padding-left: 25px;
@@ -71,6 +75,10 @@ input[type=number] {
 .login-card-inner .login-card-body .form-block .form-inner {
     overflow: hidden;
     margin-bottom: 35px;
+}
+
+label {
+    font-weight: 500;
 }
 
 @media (min-width: 767px) {
