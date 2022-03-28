@@ -2318,8 +2318,8 @@ ul.about-list-box li .about-list-info h3 {
 }
 
 .project-item-box:hover {
-  -webkit-transform: translateY(15px);
-  transform: translateY(15px);
+  /*-webkit-transform: translateY(15px);*/
+  /*transform: translateY(15px);*/
 }
 .project-item-box .single-project-link {
     display: flex;
@@ -2366,7 +2366,7 @@ ul.about-list-box li .about-list-info h3 {
 }
 
 .project-item-box:hover .project-link-title-box {
-    bottom: 15px;
+    bottom: -40px;
 }
 
 .project-link-flip-front {
