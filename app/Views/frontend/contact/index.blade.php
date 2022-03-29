@@ -28,21 +28,22 @@
     </div>
 </div>
 <!-- Map Section End -->
-<script>
-    function initMap() {
-        // create google map
-        var map = new google.maps.Map(document.getElementById('contact-map'), {
-            zoom: 16,
-            center: new google.maps.LatLng(20.7932833, 105.8244368),
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        });
-        // create marker
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(20.7932833, 105.8244368),
-            draggable: false
-        });
-        marker.setMap(map);
-    }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_KEY_API') }}&callback=initMap"></script>
+@push('scripts')
+    <script>
+        function initMap() {
+            // create google map
+            var map = new google.maps.Map(document.getElementById('contact-map'), {
+                zoom: 16,
+                center: new google.maps.LatLng(20.7932833, 105.8244368),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+            // create marker
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(20.7932833, 105.8244368),
+                draggable: false
+            });
+            marker.setMap(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_KEY_API') }}&callback=initMap"></script>@endpush
 @stop
