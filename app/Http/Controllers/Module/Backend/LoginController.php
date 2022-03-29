@@ -37,7 +37,7 @@ class LoginController extends BackendController
         if (backendGuard()->attempt($userData)) {
             return $this->_redirectToHome();
         }
-        return $this->_back();
+        return $this->_back()->withErrors(new MessageBag(['Lỗi đăng nhập']));
     }
 
     public function logout()

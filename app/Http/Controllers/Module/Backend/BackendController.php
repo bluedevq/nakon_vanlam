@@ -36,6 +36,7 @@ class BackendController extends BaseController
 
     public function render($view = null, $params = array(), $mergeData = array())
     {
+        $this->setTitle(Common::getConfig('title'));
         return parent::render($view, $params, $mergeData);
     }
 
