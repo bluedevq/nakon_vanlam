@@ -20,7 +20,7 @@ Route::middleware(['auth.backend'])->group(function () {
     // home
     Route::get('/', [
         'as' => 'dashboard.index',
-        'uses' => 'HomeController@index'
+        'uses' => 'ProductController@index'
     ]);
     // product
     Route::resource('product', 'ProductController')->names('product');

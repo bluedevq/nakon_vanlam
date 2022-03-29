@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Module\Backend;
 
+use App\Helper\Common;
 use App\Model\Entities\Category;
 use App\Model\Entities\Product;
 use Illuminate\Support\Facades\DB;
@@ -27,7 +28,7 @@ class ProductController extends BackendController
             'entities' => $this->fetchModel(Product::class)->where(function ($q) {
                 $q->orWhere('deleted_at', '');
                 $q->orWhereNull('deleted_at');
-            })->with('category')->get()
+            })->with('category')->paginate(Common::getConfig('pagination.product'))
         ]);
         return $this->render();
     }

@@ -1,9 +1,9 @@
 <header role="header" class="header">
     <div class="container flex align-items-center">
         <div class="header-title">
-            <a href="{{ public_url('/admin') }}"><img src="{{ public_url('imgs/logo.jpg') }}" width="100"></a>
+            <a href="{{ route('dashboard.index') }}"><img src="{{ public_url('imgs/logo.jpg') }}" width="100"></a>
         </div>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('product.index') }}"><span class="fas fa-warehouse">&nbsp;</span>Danh sách sản phẩm</a>
             </li>

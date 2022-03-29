@@ -379,19 +379,6 @@ a[href^="tel:"] {
 /* Common
 ----------------------------------------------- */
 body {
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-image: url("../../imgs/body_bg01.jpg");
-}
-
-body.body-bg02 {
-  background-image: url("../../imgs/body_bg02.jpg");
-}
-
-body.body-bg03 {
-  background-image: url("../../imgs/body_bg03.jpg");
 }
 
 .content {
@@ -663,7 +650,7 @@ body.body-bg03 {
 .btn {
   display: inline-block;
   font-size: 16px;
-  padding: 9px 30px;
+  padding: 9px 0;
   text-align: center;
   white-space: nowrap;
   max-width: 100%;
@@ -1072,8 +1059,8 @@ body.body-bg03 {
 
 .pagination .page-item .page-link {
   background-color: #00a9b3;
+  color: #fff;
   height: 32px;
-  text-indent: -9999px;
   overflow: hidden;
   position: relative;
   width: 32px;
@@ -1081,6 +1068,7 @@ body.body-bg03 {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
+  text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -1626,7 +1614,6 @@ input.form-control, input[type="number"].form-control, input[type="email"].form-
   }
 }
 
-input[type="submit"],
 input[type="button"],
 button {
   background-color: transparent;
@@ -2289,7 +2276,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .header {
   background-color: #252525;
   color: #fff;
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 @media (max-width: 767px) {
@@ -2308,6 +2295,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 .header .header-title a img {
   display: block;
+}
+
+.header .nav-link {
+  color: #fff;
 }
 
 @media (max-width: 767px) {

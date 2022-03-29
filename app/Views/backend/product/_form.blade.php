@@ -1,6 +1,6 @@
 {{ Form::open(['route' => isset($entity) && $entity->id ? ['product.update', $entity->id] : 'product.store', 'class' => '', 'method' => isset($entity) && $entity->id ? 'PUT' : 'post', 'enctype' => 'multipart/form-data']) }}
 <div class="form-block">
-    <div class="row col-12">
+    <div class="row">
         <div class="form-group">
             <div class="form-field col-6">
                 <label class="input-name">Tên sản phẩm</label>
@@ -9,7 +9,7 @@
             </div>
         </div>
     </div>
-    <div class="row mt-4 col-12">
+    <div class="row mt-4">
         <div class="form-group">
             <div class="form-field col-4">
                 <label class="input-name">Danh mục</label>
@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <div class="row mt-4 col-12">
+    <div class="row mt-4">
         <div class="form-group">
             <div class="form-field col-4">
                 <label class="input-name">Giá sản phẩm</label>
@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-    <div class="row mt-4 col-12">
+    <div class="row mt-4">
         <div class="form-group">
             <div class="form-field col-4">
                 <label class="input-name">Ảnh sản phẩm</label>
@@ -41,7 +41,7 @@
             @endif
         </div>
     </div>
-    <div class="row mt-4 col-12">
+    <div class="row mt-4">
         <div class="form-group">
             <div class="form-field col-8">
                 <label class="input-name">Mô tả sản phẩm</label>
@@ -50,8 +50,8 @@
             </div>
         </div>
     </div>
-    <div class="row mt-4 col-12">
-        <button type="submit" name="submit" class="btn btn-success col-2">Lưu</button>
+    <div class="row mt-4">
+        <input type="submit" value="Lưu" class="btn btn-success col-2"/>
     </div>
 </div>
 {!! Form::close() !!}

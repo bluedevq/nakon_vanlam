@@ -1,5 +1,5 @@
 @if(session()->has('success'))
-    <div class="mt-2">
+    <div class="mt-2 mb-2">
         @php
             $successMsg = Session()->get('success');
         @endphp
@@ -12,7 +12,7 @@
 @endif
 
 @if (!empty($errors) && count($errors) > 0)
-    <div class="mt-2">
+    <div class="mt-2 mb-2">
         <ul class="list-group">
             @foreach ($errors->all() as $error)
                 <li class="list-group-item alert-danger text-danger"><i class="fas fa-exclamation-triangle">&nbsp;</i>{{ $error }}</li>

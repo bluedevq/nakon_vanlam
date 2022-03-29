@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Module\Backend;
 
+use App\Helper\Common;
 use App\Model\Entities\Category;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -25,7 +26,7 @@ class CategoryController extends BackendController
             'entities' => $this->fetchModel(Category::class)->where(function ($q) {
                 $q->orWhere('deleted_at', '');
                 $q->orWhereNull('deleted_at');
-            })->get()
+            })->paginate(Common::getConfig('pagination.category'))
         ]);
         return $this->render();
     }

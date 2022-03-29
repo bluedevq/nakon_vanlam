@@ -6,7 +6,12 @@
 <div class="main flex flex-column flex-root">
     <div class="page flex flex-row flex-column-fluid">
         <div class="wrapper flex flex-column flex-row-fluid">
-            @yield('content')
+            <div class="content">
+                <div class="container">
+                    @include('layouts.backend.elements.messages')
+                    @yield('content')
+                </div>
+            </div>
         </div>
     </div>
 </div>
