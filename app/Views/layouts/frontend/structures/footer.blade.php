@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 footer-box-item">
                 <div class="footer-about footer-list">
-                    <a class="footer-logo" href="#">
+                    <a class="footer-logo" href="{{ route('home.index') }}">
                         <img src="{{ public_url('/imgs/logo.jpg') }}" class="white-logo" alt="logo" width="137" height="46">
                     </a>
                     <p>CÔNG TY TNHH THƯƠNG MẠI
@@ -19,7 +19,7 @@
                     </ul>
                 </div>
             </div>
-            @if(!blank($categories))
+            @if(!blank($categories) && !isMobile())
                 <div class="col-lg-2 col-md-6 footer-box-item">
                     <div class="footer-list">
                         <h5 class="title">Các loại sản phẩm</h5>

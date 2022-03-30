@@ -26,7 +26,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="section-title">
-                            <h2>{{ \Illuminate\Support\Str::upper($productCategory) }}</h2>
+                            <h3>{{ \Illuminate\Support\Str::upper($productCategory) }}</h3>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
 @endif
 <!-- End List Products Section -->
 <!-- Start Hire Section -->
-<section class="hire-area pb-100">
+<section class="hire-area section-padding">
     <div class="container">
         <div class="hire-wrapper">
             <div class="row">

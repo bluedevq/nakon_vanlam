@@ -116,7 +116,7 @@ dl, ol, ul {
 }
 
 .section-padding {
-	padding: 100px 0;
+	padding: 30px 0;
 }
 
 a {
@@ -1036,14 +1036,14 @@ p:last-child {
  **************************************/
 
 .home-slider-area {
-	min-height: 630px;
+	min-height: 500px;
 	position: relative;
 	z-index: 1;
 }
 
 .home-slider,
 .home-slider-single-item {
-	height: 630px;
+	height: 500px;
 	overflow: hidden;
 	display: block;
 }
@@ -4365,10 +4365,9 @@ blockquote::after, .blockquote::after {
 
 .footer-area {
 	background: #252525;
-	padding: 100px 0;
+	padding: 30px 0;
 }
 .footer-about {
-    padding-right: 50px;
 }
 .footer-logo {
 	margin-bottom: 20px;

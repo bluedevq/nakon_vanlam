@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="section-title">
-                            <h2>{{ \Illuminate\Support\Str::upper($entity->name) }}</h2>
+                            <h3>{{ \Illuminate\Support\Str::upper($entity->name) }}</h3>
                         </div>
                     </div>
                 </div>

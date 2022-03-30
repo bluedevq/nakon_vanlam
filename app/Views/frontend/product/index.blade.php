@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="section-title">
-                            <h2>{{ \Illuminate\Support\Str::upper('Các sản phẩm của chúng tôi') }}</h2>
+                            <h3>{{ \Illuminate\Support\Str::upper('Các sản phẩm của chúng tôi') }}</h3>
                         </div>
                     </div>
                 </div>
