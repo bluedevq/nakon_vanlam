@@ -8,6 +8,14 @@ Route::get('/product/{id}', [
     'as' => 'frontend.product.show',
     'uses' => 'ProductController@show'
 ]);
+Route::get('/product', [
+    'as' => 'frontend.product.index',
+    'uses' => 'ProductController@index'
+]);
+Route::get('/category/{id}', [
+    'as' => 'frontend.category.show',
+    'uses' => 'CategoryController@show'
+]);
 Route::get('contact', [
     'as' => 'contact.index',
     'uses' => 'ContactController@index'

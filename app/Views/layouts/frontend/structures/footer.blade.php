@@ -25,7 +25,7 @@
                         <h5 class="title">Các loại sản phẩm</h5>
                         <ul class="footer-nav-links">
                             @foreach($categories as $category)
-                                <li><a href="#">{{ $category->name }}</a></li>
+                                <li><a href="{{ route('frontend.category.show', $category->id) }}">{{ $category->name }}</a></li>
                             @endforeach
                         </ul>
                     </div>
@@ -37,7 +37,7 @@
                     <div class="footer-contact-info">
                         <ul class="footer-contact-list">
                             <li><span>Địa chỉ:</span> xóm Đình, thôn Hòa Mỹ, xã Hồng Minh, huyện Phú Xuyên, TP. Hà Nội.</li>
-                            <li><span>SĐT:</span> <a href="tel:0912829510">0912 829 510</a></li>
+                            <li><span>SĐT:</span> <a href="tel:{{ \App\Helper\Common::getConfig('phone_number') }}">{{ formatPhone(\App\Helper\Common::getConfig('phone_number')) }}</a></li>
                             <li><span>Email:</span> <a href="mailto:random@example.com">contact-info@example.com</a></li>
                         </ul>
                     </div>

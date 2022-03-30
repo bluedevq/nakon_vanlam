@@ -1,26 +1,26 @@
 @extends('layouts.frontend.default')
 @section('content')
     <!-- Start List Products Section -->
-    @if(!blank($entities))
+    @if(!blank($listProducts))
         <section class="project-section bg-grey section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="section-title">
-                            <h2>{{ \Illuminate\Support\Str::upper('Các sản phẩm của chúng tôi') }}</h2>
+                            <h2>{{ \Illuminate\Support\Str::upper($entity->name) }}</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    @foreach($entities as $entity)
+                    @foreach($listProducts as $product)
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="project-item-box">
-                                <a class="single-project-link" href="{{ route('frontend.product.show', $entity->id) }}">
-                                    <img src="{{ public_url($entity->image_url) }}" alt="image">
+                                <a class="single-project-link" href="{{ route('frontend.product.show', $product->id) }}">
+                                    <img src="{{ public_url($product->image_url) }}" alt="image">
                                     <div class="project-link-title-box">
                                         <div class="project-link-title-inside">
                                             <div class="project-link-flip-front">
-                                                <h3>{{ $entity->name }}</h3>
+                                                <h3>{{ $product->name }}</h3>
                                             </div>
                                             <div class="project-link-flip-back">
                                                 <h3>Xem thêm</h3>
@@ -31,6 +31,21 @@
                             </div>
                         </div>
                     @endforeach
+                </div>
+            </div>
+        </section>
+    @else
+        <section class="project-section bg-grey section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="section-title">
+                            <h2>{{ \Illuminate\Support\Str::upper($entity->name) }}</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="align-center">Hiện không có sản phẩm nào</p>
                 </div>
             </div>
         </section>

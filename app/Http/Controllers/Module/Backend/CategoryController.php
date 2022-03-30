@@ -26,7 +26,7 @@ class CategoryController extends BackendController
             'entities' => $this->fetchModel(Category::class)->where(function ($q) {
                 $q->orWhere('deleted_at', '');
                 $q->orWhereNull('deleted_at');
-            })->paginate(Common::getConfig('pagination.category'))
+            })->paginate(Common::getConfig('pagination.backend.category'))
         ]);
         return $this->render();
     }

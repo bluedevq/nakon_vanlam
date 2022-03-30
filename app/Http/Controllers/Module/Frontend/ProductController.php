@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Module\Frontend;
 
+use App\Helper\Common;
 use App\Model\Entities\Product;
 
 /**
@@ -13,12 +14,15 @@ class ProductController extends FrontendController
     public function __construct()
     {
         parent::__construct();
+        $this->registModel(Product::class);
     }
 
     public function index()
     {
         $this->setViewData([
-            'entities' => app()->make(Product::class)->search($this->getParams())->get()
+            'entities' => $this->fetchModel(Product::class)
+                ->search($this->getParams())
+                ->paginate(Common::getConfig('pagination.frontend.product'))
         ]);
         return $this->render();
     }
@@ -26,7 +30,7 @@ class ProductController extends FrontendController
     public function show($id)
     {
         $this->setViewData([
-            'entity' => app()->make(Product::class)->find($id)
+            'entity' => $this->fetchModel(Product::class)->find($id)
         ]);
         return $this->render();
     }

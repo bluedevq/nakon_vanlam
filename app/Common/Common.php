@@ -215,7 +215,6 @@ if (!function_exists('getStatusColumn')) {
         return getSystemConfig('status_column.' . $key);
     }
 }
-
 if (!function_exists('sql_binding')) {
 
     function sql_binding($sql, $bindings)
@@ -240,5 +239,11 @@ if (!function_exists('toSql')) {
     function toSql($query)
     {
         return sql_binding($query->toSql(), $query->getBindings());
+    }
+}
+if (!function_exists('formatPhone')) {
+    function formatPhone($phone)
+    {
+        return \Illuminate\Support\Str::substr($phone, 0, 4) . ' ' . \Illuminate\Support\Str::substr($phone, 4, 3) . ' ' . \Illuminate\Support\Str::substr($phone, 6);
     }
 }

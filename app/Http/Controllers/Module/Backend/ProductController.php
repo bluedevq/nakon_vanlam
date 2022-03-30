@@ -25,10 +25,13 @@ class ProductController extends BackendController
     public function index()
     {
         $this->setViewData([
-            'entities' => $this->fetchModel(Product::class)->where(function ($q) {
-                $q->orWhere('deleted_at', '');
-                $q->orWhereNull('deleted_at');
-            })->with('category')->paginate(Common::getConfig('pagination.product'))
+            'entities' => $this->fetchModel(Product::class)
+                ->where(function ($q) {
+                    $q->orWhere('deleted_at', '');
+                    $q->orWhereNull('deleted_at');
+                })
+                ->with('category')
+                ->paginate(Common::getConfig('pagination.backend.product'))
         ]);
         return $this->render();
     }
